@@ -1,0 +1,7 @@
+docker network create --subnet 172.28.0.0/16 --gateway 172.28.0.1 mon-reseau-1
+docker network create --subnet 172.29.0.0/16 --gateway 172.29.0.1 mon-reseau-2
+
+docker run -d --name httpd1 --network mon-reseau-1 -p 81:80 httpd:2.4
+docker run -d --name httpd2 --network mon-reseau-1 -p 82:80 httpd:2.4
+docker run -d --name httpd3 --network mon-reseau-2 -p 83:80 httpd:2.4
+docker run -d --name httpd4 --network mon-reseau-2 -p 84:80 httpd:2.4
