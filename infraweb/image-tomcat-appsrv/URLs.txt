@@ -1,0 +1,8 @@
+JDK 11 Linux : 
+
+https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz
+
+
+Tomcat 9 : 
+
+https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.64/bin/apache-tomcat-9.0.64.tar.gz
